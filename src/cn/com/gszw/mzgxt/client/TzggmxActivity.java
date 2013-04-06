@@ -22,15 +22,11 @@ import android.os.Message;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.view.View.OnClickListener;
-import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import cn.com.gszw.mzgxt.util.HttpUtil;
-import cn.com.gszw.mzgxt.util.SQLHelper;
 
 public class TzggmxActivity extends Activity {
 

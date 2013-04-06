@@ -137,7 +137,6 @@ public class LoginActivity extends Activity {
 					.MD5Encode(passwrod)));
 			params.add(new BasicNameValuePair("imsi", imsi));
 			params.add(new BasicNameValuePair("imei", imei));
-			params.add(new BasicNameValuePair("telId", ""));
 			try {
 				result = HttpHelper.getStringByPost(LoginActivity.this,
 						"LoginZgxt", params);
