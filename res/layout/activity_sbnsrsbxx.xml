@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_height="fill_parent"
+       android:layout_width="fill_parent"
+       android:background="@drawable/background">
+      <!-- 顶部图标 -->
+       <RelativeLayout
+        android:id="@+id/main_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/d04"
+        android:background="@drawable/title_shape"
+        android:gravity="center_vertical"
+           >
+       <ImageView
+           android:id="@+id/image"
+           android:layout_width="wrap_content"
+           android:layout_height="fill_parent"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:src="@drawable/swtb" />
+		 <TextView 
+			android:id="@+id/title_zgxt"
+			android:layout_width="wrap_content"
+	        android:layout_height="fill_parent" 
+	        android:layout_toRightOf="@+id/image"   
+	        android:gravity="center_vertical"
+	        android:text="@string/title_zgxt"
+	        style="@style/sty_title_zgxt"
+	        />
+		  <TextView 
+			android:id="@+id/title_pt"
+			android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:padding="2dip"   
+	        android:gravity="bottom"   
+	        android:layout_alignParentRight="true" 	        
+	        style="@style/sty_title_pt"
+         />
+	 </RelativeLayout>
+		<!-- 中间部分  -->	
+    	<LinearLayout android:layout_width="fill_parent"
+		 android:layout_height="40dip" 
+		 android:layout_below="@+id/main_title" 
+		 android:background="@drawable/main_bg1"
+		 android:id="@+id/v_zjnr"
+		 android:layout_margin="5dip"
+		 android:padding="4dip"
+		 android:layout_column="0" 
+		 android:orientation="vertical">
+			<!-- 纳税人编码 -->    
+		    <TextView android:id="@+id/jk_nsrbm" 
+		       android:layout_width="fill_parent"
+		       android:text="dssafddsf"
+		       android:textSize="10sp"
+		       android:textColor="#0C6888"
+		       android:layout_height="wrap_content" />
+	    	<!-- 纳税人名称 -->
+		    <TextView android:id="@+id/jk_nsrmc" 
+		       android:layout_width="fill_parent"
+		       android:text="dsafafsa"
+		       android:textSize="10sp" 
+		       android:textColor="#0C6888"		       
+		       android:singleLine="true"
+			   android:layout_height="wrap_content" />
+    	</LinearLayout>
+
+    	<!-- 列表标题 -->
+	<LinearLayout android:layout_height="wrap_content"
+		 android:orientation="horizontal"
+		android:layout_marginTop="5dip" android:layout_marginLeft="5dip"
+		android:layout_weight="1"
+		android:layout_below="@+id/v_zjnr"
+		android:layout_width="fill_parent" android:id="@+id/linearLayout2111">		
+		<TextView android:layout_weight="1" 
+		    android:layout_width="wrap_content"
+			android:gravity="center_horizontal" 
+			android:layout_height="wrap_content"
+			android:textColor="#000000" 
+			android:textSize="24px" 
+			android:text="申报月份"/>
+		<TextView android:layout_weight="2" 
+		    android:layout_width="wrap_content"
+			android:gravity="center_horizontal" 
+			android:layout_height="wrap_content"
+			android:textColor="#000000" 
+			android:textSize="24px" 
+			android:text="申报凭证数" />
+		<TextView android:layout_weight="1" 
+		    android:layout_width="wrap_content"
+			android:gravity="center_horizontal" 
+			android:layout_height="wrap_content"
+			android:textColor="#000000" 
+			android:textSize="24px" 
+			android:text="申报税种" />
+		<TextView android:layout_weight="1" 
+		    android:layout_width="wrap_content"
+			android:gravity="center_horizontal" 
+			android:layout_marginLeft="10dip"
+			android:layout_height="wrap_content" 
+			android:textColor="#000000"
+			android:textSize="24px" 
+			android:text="申报金额" />
+		<TextView android:layout_weight="2" 
+		    android:layout_width="wrap_content"
+			android:gravity="center_horizontal" 
+			android:layout_height="wrap_content"
+			android:textColor="#000000" 
+			android:textSize="24px" 
+			android:text="未开票额"/>
+
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/linearLayout3"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/linearLayout2111">
+
+		<ListView android:layout_height="fill_parent"
+			android:layout_width="fill_parent" 
+			android:id="@+id/sb_list"></ListView>
+	</LinearLayout>
+	    	
+ </RelativeLayout>
+

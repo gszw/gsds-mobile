@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <include layout="@layout/activity_public_title" />
+
+    <LinearLayout
+        android:id="@+id/v_jjjjj"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_title"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <EditText
+            android:id="@+id/fpdm"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/drawable_edit"
+            android:gravity="left"
+            android:hint="发票代码(12位)"
+            android:maxLength="12"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/fphm"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/drawable_edit"
+            android:gravity="left"
+            android:hint="发票号码(8位)"
+            android:maxLength="8"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_fpcx_search"
+            android:width="26dp"
+            android:height="26dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/select_btn_login"
+            android:padding="2dp"
+            android:text="GO" />
+    </LinearLayout>
+    <!-- 下半部分，显示该用户总体信息 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_jjjjj"
+        android:layout_column="0"
+        android:layout_margin="5dip"
+        android:orientation="vertical"
+        android:padding="4dip" >
+
+        <!-- 底部WebView -->
+
+        <WebView
+            android:id="@+id/v_webview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+</RelativeLayout>

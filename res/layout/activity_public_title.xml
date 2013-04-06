@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d04"
+        android:background="@drawable/title_shape"
+        android:gravity="center_vertical"
+           >
+        <Button
+            android:id="@+id/btn_activity_public_exit"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_margin="7dp"
+            android:text="返回"
+            android:textSize="14sp"
+			android:textStyle="bold"
+			android:textColor="#ffffff" 
+            android:background="@drawable/return_button_shape"/>
+		 <TextView
+            style="@style/sty_title_pt"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="bottom"
+            android:padding="2dip" />
+
+        <TextView
+            android:id="@+id/txt_activity_public_title"
+            style="@style/sty_title_zgxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/title_zgxt" />
+         />
+	 </RelativeLayout>

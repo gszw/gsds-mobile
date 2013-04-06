@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_height="fill_parent"
+       android:layout_width="fill_parent"
+       android:background="@drawable/background">
+    <include layout="@layout/activity_public_title" />
+		<!-- 查询部分  -->	
+		<LinearLayout android:layout_width="fill_parent"
+		 android:layout_height="40dp" 
+		 android:layout_below="@+id/main_title" 
+		 android:id="@+id/v_cx"
+		 android:layout_marginLeft="5dip"
+		 android:layout_marginRight="5dip"
+		 android:padding="4dip"
+		 android:gravity="center"
+		 android:orientation="horizontal">
+			<!--票证号码输入框 -->    
+		    <EditText android:id="@+id/cx_pzhm" 
+		        android:layout_weight="4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/drawable_edit"
+		        android:hint="请输入票证号码"
+		        />
+	    	<!-- 查询按钮 -->
+	    	<Button
+				android:id="@+id/syscx_pz_bt"	
+				            android:padding="2dp"
+				android:text="查 询"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/select_btn_login"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+				/>
+    	</LinearLayout>
+
+
+    <!-- 列表 -->
+	<LinearLayout android:id="@+id/linearLayout4"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/v_cx"
+        >
+
+		<ListView android:layout_height="fill_parent"
+			android:layout_width="fill_parent" 
+			android:id="@+id/jk_list"></ListView>
+	</LinearLayout>
+ </RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dip">
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        android:orientation="horizontal">
+    
+        <TextView 
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="纳税人编码："
+		/>	
+		<TextView
+		android:id="@+id/c_nsrbm"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		/>
+     </LinearLayout> 
+     <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        android:orientation="horizontal">
+    
+        <TextView 
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="文书号："
+		/>	
+		<TextView
+		android:id="@+id/c_wsh"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		/>
+     </LinearLayout> 
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 使用的尺寸数值请按照如下规则补充及使用-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>   
+    <dimen name="df1">25sp</dimen><!-- 登录包体字体使用 -->
+    <dimen name="df2">15sp</dimen><!-- XX字体使用 -->
+    <dimen name="df12">12sp</dimen><!-- 登录按钮字体使用 -->
+    
+    
+    <dimen name="d02">65dp</dimen><!-- 登录标题组件高度 -->    
+	<dimen name="d03">10dp</dimen><!-- XX组件内填充 --> 
+	<dimen name="d04">45dp</dimen><!-- 主界面标题组件高度 -->    
+	<dimen name="d05">30dp</dimen><!-- XX组件内填充 --> 
+</resources>

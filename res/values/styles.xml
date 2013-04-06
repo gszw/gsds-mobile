@@ -1,0 +1,83 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <drawable name="BackBar">#FF7F00</drawable>
+    	<style name="logoText"><!-- 标题栏风格 -->
+       <!--  <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#6d6d6d</item> -->
+        <item name="android:textSize">15sp</item>
+		<item name="android:textColor">#0C6888</item>
+        <item name="android:background">@drawable/logo_text_shape</item>
+    </style>
+             <!-- ...... -->
+	<style name="style_1"> 
+		<item name="android:textSize">@dimen/df2</item>
+		<item name="android:textColor">@color/c1white</item>
+     </style> 
+     
+         <!-- 淡蓝色的，登录界面上的字体 -->
+	<style name="sty_login_title"> 
+		<item name="android:textSize">@dimen/df1</item>
+		<item name="android:textColor">@color/c1white</item>
+     </style> 
+     	<!--  登录界面 用户名及密码输入框用的格式 -->
+	<style name="login_edit_style">
+	    <item name="android:background">@drawable/login_editview</item>
+	    <item name="android:textColor">@drawable/login_edit_select</item>
+	    <item name="android:textSize">11sp</item>
+	    <item name="android:paddingLeft">80dp</item>
+	    <item name="android:maxLength">11</item>
+	</style>
+	
+	    <!-- 登录界面上 登录按钮的字体 -->
+	<style name="sty_login_btn"> 
+		<item name="android:textSize">10sp</item>
+		<item name="android:textColor">@color/c1white</item>
+     </style> 
+     
+		<!-- 登录界面上 两个checkbox的样式 -->
+	<style name="sty_login_chb"  parent="@android:style/Widget.CompoundButton.CheckBox">
+		<item name="android:button">@drawable/select_chb_login</item>	
+    </style> 
+     
+	  <!-- 主界面标题移动征管系统的字体 -->
+	<style name="sty_title_zgxt"> 
+		<item name="android:textSize">21sp</item>
+		<item name="android:textColor">@color/c1white</item>
+     </style> 
+     
+		 <!-- 主界面标题XX平台的字体 -->
+	<style name="sty_title_pt"> 
+		<item name="android:textSize">@dimen/df12</item>
+		<item name="android:textColor">@color/c5blue</item>
+     </style>      
+    	 <!-- 主界面票据查询用的 -->
+      	<style name="draw_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimEnabled">true</item> <!-- activity 变暗 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowIsTranslucent">true</item><!--半透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/menu_up</item>
+    </style>
+	
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/gn_layout"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="fill_parent">
+	<ImageView
+		android:id="@+id/gn_image"
+		android:scaleType="fitXY"
+		android:layout_width="50dip"
+		android:layout_height="50dip"/>
+	<TextView
+		android:id="@+id/gn_name"
+		android:layout_width="58dip"
+		android:layout_height="wrap_content"
+		android:padding="5dip"
+		 style="@style/style_1"/>
+</LinearLayout>
+
+

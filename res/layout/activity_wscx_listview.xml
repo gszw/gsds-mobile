@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_centerInParent="true"
+	    android:gravity="center_vertical"
+	    android:layout_marginLeft="10dip"
+	    android:layout_marginRight="10dip"
+	    android:id="@+id/t_xh">
+		<TextView  
+		    android:layout_width="45dip"
+			android:layout_height="45dip"
+			android:background="@drawable/wstb"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:layout_gravity="center_vertical"
+			android:gravity="center"
+			android:textColor="@color/c2black"
+			android:id="@+id/xh" />
+	</LinearLayout>
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/t_xh"
+	    android:layout_margin="10dip"
+	    android:id="@+id/t_nr">
+		<TextView  
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/c2black" 
+		    android:visibility="gone"
+			android:id="@+id/hjmc" />	
+		<TextView 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/c2black"
+			android:layout_below="@+id/hjmc"
+			android:textSize="12sp" 
+			android:textStyle="bold"
+			android:id="@+id/lcmc" />
+		<!-- 文书号 -->
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/lcmc"
+		    android:id="@+id/v_wsh"
+		    android:orientation="horizontal">
+			<TextView  
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:gravity="center_vertical"
+				android:textColor="@color/c2black"
+				android:text="文书号：" />
+			<TextView  
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:gravity="center"
+				android:textColor="@color/c2black"
+				android:id="@+id/wsh" />
+	    </LinearLayout>
+	    <!-- 纳税人编码 -->
+	    <LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/v_wsh"
+		    android:id="@+id/v_nsrbm"
+		    android:orientation="horizontal">
+			<TextView  
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:gravity="center_vertical"
+				android:textColor="@color/c2black"
+				android:text="纳税人编码：" />
+			<TextView  
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:gravity="center"
+				android:textColor="@color/c2black"
+				android:id="@+id/nsrbm" />
+	    </LinearLayout>
+	    <!-- 纳税人名称 -->
+	    <LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/v_nsrbm"
+		    android:id="@+id/v_nsrmc"
+		    android:orientation="horizontal">
+			<TextView  
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:gravity="center_vertical"
+				android:textColor="@color/c2black"
+				android:text="纳税人名称：" />
+			<TextView  
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:gravity="center"
+				android:textColor="@color/c2black"
+				android:id="@+id/nsrmc" />
+	    </LinearLayout>
+	    <!-- 提交人 -->
+	    <LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/v_nsrmc"
+		    android:id="@+id/v_tjr"
+		    android:orientation="horizontal">
+			<TextView  
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:gravity="center_vertical"
+				android:textColor="@color/c2black"
+				android:text="提交人：" />
+			<TextView  
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:gravity="center"
+				android:textColor="@color/c2black"
+				android:id="@+id/tjr" />
+	    </LinearLayout>
+	    <!-- 提交时间 -->
+	    <LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/v_tjr"
+		    android:id="@+id/v_tjsj"
+		    android:orientation="horizontal">
+			<TextView  
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:gravity="center_vertical"
+				android:textColor="@color/c2black"
+				android:text="提交时间：" />
+			<TextView  
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:gravity="center"
+				android:textColor="@color/c2black"
+				android:id="@+id/tjsj" />
+	    </LinearLayout>
+		</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/login_title"
+        style="@style/sty_login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/d02"
+        android:background="@drawable/title_shape"
+        android:gravity="center"
+        android:text="@string/loginButton" />
+
+    <RelativeLayout
+        android:id="@+id/relative_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/yjjx_shape" >
+
+        <EditText
+            android:id="@+id/swrydm"
+            style="@style/login_edit_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="@string/hint_username"
+            android:inputType="number" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/swrydm"
+            android:layout_alignTop="@+id/swrydm"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/login_user" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/login_edit_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/swrydm"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/password"
+            android:layout_alignTop="@+id/password"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/login_pass" />
+
+        <Button
+            android:id="@+id/login_bt"
+            style="@style/sty_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/password"
+            android:layout_below="@id/password"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/select_btn_login"
+            android:focusable="true"
+            android:text="@string/loginButton" />
+
+        <LinearLayout
+            android:id="@+id/chkbox_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/cbRemember"
+                style="@style/sty_login_chb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/cb_repass_txt"
+                style="@style/sty_login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cbRemember" />
+
+            <CheckBox
+                android:id="@+id/auto_login"
+                style="@style/sty_login_chb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/cb_autologin_txt"
+                style="@style/sty_login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_login" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/imsi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_login"
+        android:gravity="center"
+        android:textIsSelectable="false" />
+
+</RelativeLayout>

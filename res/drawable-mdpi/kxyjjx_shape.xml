@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+       android:shape="rectangle" >
+     		<!-- 定义总体分析界面的空心圆角矩形 -->
+<stroke android:width="2dp"
+        android:color="@color/c004" />
+<gradient 
+		android:startColor="@color/c1white" 
+		android:endColor="@color/c1white"/> 
+<corners android:radius="10dp" /> 
+</shape>

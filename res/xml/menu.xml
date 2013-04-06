@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <Preference
+        android:key="a"
+        android:icon="@drawable/a_jbqk"
+        android:title="基本情况"
+        android:summary="包含纳税人的基础信息和银行登记 信息"
+        android:order="1"
+        />
+
+    <Preference
+        android:key="b"
+        android:icon="@drawable/b_hdqk"
+        android:title="核定情况"
+        android:summary="包含纳税人的主税核定信息及地方三税的核定信息"
+        android:order="2"
+        />
+
+    <Preference
+        android:key="c"
+        android:icon="@drawable/c_rdqk"
+        android:title="认定情况"
+        android:summary="包含纳税人的减免及停业、简并征期信息"
+        android:order="3"
+        />
+    
+    <Preference
+        android:key="d"
+        android:icon="@drawable/d_sbjk"
+        android:title="申报缴款"
+        android:summary="包含纳税人的申报及缴款数据"
+        android:order="4"
+        />
+    
+    <Preference
+        android:key="e"
+        android:icon="@drawable/e_fpxg"
+        android:title="发票相关"
+        android:summary="包含纳税人的发票核定、发票领用及发票分析信息"
+        android:order="5"
+        />
+    <Preference
+        android:key="f"
+        android:order="0"
+        />
+
+
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+        <corners android:radius="2dp" /> 
+        <stroke 
+        android:width="0.5dp" 
+        android:color="@color/c2black"/>
+        <gradient 
+    	android:startColor="#6FDBFF" 
+    	android:endColor="#04AFE8" 
+    	android:angle="270"/><!-- angle为角度 -->
+</shape>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+>
+    
+	<ListView android:id="@+id/sz_list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_btn_login"
+    android:dividerHeight="1dp"
+    />
+ 	<!-- 定义一个 ImageView用作列表项图标 -->
+  	<ImageView android:id="@+id/left_pic"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      /> 
+  	<!-- 定义一个TextView用于列表项的文字说明 -->
+    <TextView android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/left_pic"
+        android:textSize="12dp"
+        android:textColor="@color/c1white"
+        android:padding="8dp"
+        />    
+</RelativeLayout>

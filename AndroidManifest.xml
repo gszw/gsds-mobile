@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.com.gszw.mzgxt.client"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!-- 以下权限是系统版本升级时写卡权限，不可删除WRITE_EXTERNAL_STORAGE -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 以下权限是读取本机手机号码用的，不可删除READ_PHONE_STATE -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 网络检测权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+
+        <!-- <activity android:name="cn.com.gszw.mzgxt.client.FWelcomeActivity" > -->
+        <activity android:name="cn.com.gszw.mzgxt.client.LoginPanduan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.com.gszw.mzgxt.client.FWelcomeActivity" 
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="cn.com.gszw.mzgxt.client.WelcomeActivity"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name="cn.com.gszw.mzgxt.client.MainActivity" 
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="cn.com.gszw.mzgxt.client.DhcxActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.DjNsryhscxActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.FhmxActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.FpcxActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.GhfbActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.PublicActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.PzcxmxActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.RkLjrkqkActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.SbLjsbqkActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.SbNsrsbxxActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.SpcxActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.UpdateActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.MainActivity_bak" />
+        <activity android:name="cn.com.gszw.mzgxt.client.ZsLjzsqkActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.ZsNsrjkxxActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.ZtfxActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.TzggmxActivity" />
+        <activity android:name="cn.com.gszw.mzgxt.client.SjzcActivity"/>
+        <activity android:name="cn.com.gszw.mzgxt.client.LoginActivity"/>
+    </application>
+
+</manifest>

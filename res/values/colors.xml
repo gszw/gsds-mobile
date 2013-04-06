@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 使用的颜色请按照如下规则补充及使用-->
+<!-- 加入透明颜色定义，透明颜色格式定义#AARRGGBB AA表示透明度,00表示完全透明，ff表示完全不透明，颜色定义不变-->
+<resources>
+    <!-- 基本色 -->
+    <color name="c1white">#FFFFFF</color><!-- 白色 -->
+    <color name="c2black">#000000</color><!-- 黑色 -->
+    <color name="c3red">#FF0000</color><!-- 红色 -->
+    <color name="c4green">#00FF00</color><!-- 绿色 -->
+    <color name="c5blue">#0000FF</color><!-- 蓝色 -->
+    <color name="c6syan">#00FFFF</color><!--青色   -->
+    <color name="c7yellow">#FFFF00</color><!--黄色   -->
+    <color name="c8purple">#FF00FF</color><!--紫色 -->
+    <!-- 扩展色 -->
+    <color name="c001">#A52A2A</color><!--褐色 -->
+    <color name="c002">#7DBEFF</color><!--淡蓝色 -->
+    <color name="c003">#007EA8</color><!--深蓝色 -->
+    <color name="c004">#7DC9FB</color><!--淡蓝色 -->
+    <color name="c005">#D3ECFE</color><!--更淡蓝色 -->
+    <color name="c_title">#0C6888</color><!--标题颜色 -->
+    <color name="c_menu">#4b4d4d</color>
+    <color name="c_tab_bg">#04508b</color> 
+    <color name="c_qianhui">#999999</color> 
+    <color name="c_shenhui">#666666</color> 
+    <color name="c_qianqing">#00ccff</color><!-- 浅青色 -->
+    <!-- 带Alpha透明色定义 ，建议以后颜色定义使用该定义方法-->
+    
+</resources>

@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_height="fill_parent"
+       android:layout_width="fill_parent"
+       android:background="@drawable/background">
+      <!-- 顶部图标 -->
+       <RelativeLayout
+        android:id="@+id/main_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/d04"
+        android:background="@drawable/title_shape"
+        android:gravity="center_vertical"
+           >
+       <ImageView
+           android:id="@+id/image"
+           android:layout_width="wrap_content"
+           android:layout_height="fill_parent"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:src="@drawable/swtb" />
+		 <TextView 
+			android:id="@+id/title_zgxt"
+			android:layout_width="wrap_content"
+	        android:layout_height="fill_parent" 
+	        android:layout_toRightOf="@+id/image"   
+	        android:gravity="center_vertical"
+	        android:text="@string/title_zgxt"
+	        style="@style/sty_title_zgxt"
+	        />
+		  <TextView 
+			android:id="@+id/title_pt"
+			android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:padding="2dip"   
+	        android:gravity="bottom"   
+	        android:layout_alignParentRight="true" 	        
+	        style="@style/sty_title_pt"
+         />
+	 </RelativeLayout>
+		<!-- 中间部分  -->	
+                  	<!-- 下半部分，显示主要信息 -->
+    	<ScrollView android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:scrollbars="vertical"
+             android:layout_below="@+id/main_title"
+		     android:orientation="vertical">      
+                   
+                  	<RelativeLayout android:layout_width="fill_parent"
+              		 android:layout_height="wrap_content"              		 
+              		 android:layout_margin="3dip"
+              		 android:padding="2dip"
+              		 android:layout_column="0" 
+              		 android:orientation="vertical">
+      
+                         		 
+                      	<!-- 管户情况 -->
+                          <LinearLayout android:layout_width="fill_parent"
+                      		 android:layout_height="wrap_content" 
+              		         android:layout_margin="3dip"
+              		         android:padding="2dip"
+              		         android:layout_column="0" 
+              		         android:id="@+id/fb_01"	
+              		          android:layout_below="@+id/fb_00"	         
+              		         android:gravity="center"
+              		         android:orientation="vertical">
+              		         <!-- 上下两行，第一行显示管户情况，第二行是个RelativeLayout -->
+              		         <TextView 
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:text="管户分布"
+              		                android:gravity="center_vertical"
+                         		        android:textSize="20sp" 
+              		                android:textColor="#0C6888"		       
+                        			     />
+                        		<!-- 下半部分三行，按钮居右， -->	     
+                               <RelativeLayout
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  >
+                                  <!-- 三个LinearLayout加一个Button -->
+                                  <!-- 管户总计 -->
+                                  <LinearLayout
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:id="@+id/gh_01"
+              		                android:orientation="horizontal"
+                                     >
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:text="总计："
+              		              
+              		                  android:textColor="#0C6888"		       
+                        			     />
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:id="@+id/sj01"
+ 
+              		                  android:textColor="#0C6888"		       
+                        			     />          			     
+                                  </LinearLayout>
+                                  <!-- 其中税收管户 -->
+                                  <LinearLayout
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:orientation="horizontal"
+              		                android:layout_below="@+id/gh_01"
+              		                android:id="@+id/gh_02"
+                                     >
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:text="          税收管户："
+              		                  android:textColor="#0C6888"		       
+                        			     />
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:id="@+id/sj02"
+
+              		                  android:textColor="#0C6888"		       
+                        			     />                         
+                                  </LinearLayout>
+                                  <!-- 其中：社保管户 -->
+                                  <LinearLayout
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:orientation="horizontal"
+              		                android:layout_below="@+id/gh_02"
+              		                android:id="@+id/gh_03"		                
+                                     >
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:text="          社保管户："
+              		                  
+              		                  android:textColor="#0C6888"		       
+                        			     />
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+
+              		                  android:id="@+id/sj03"
+              		                  android:textColor="#0C6888"		       
+                        			     />                       
+                                  </LinearLayout>
+                                  <!-- 详细情况按钮，据右 -->
+                                  <Button
+              						android:id="@+id/xx_gh"	 
+              						android:layout_alignParentRight="true"
+              						android:layout_width="wrap_content"
+              						android:layout_height="wrap_content"
+              						/>                   
+                               </RelativeLayout>
+              
+              		     </LinearLayout>    
+              
+                      	<!-- 申报情况 -->
+                          <LinearLayout android:layout_width="fill_parent"
+                      		 android:layout_height="wrap_content" 
+              		         android:layout_margin="3dip"
+              		         android:padding="2dip"
+              		         android:layout_column="0" 
+              		         android:layout_below="@+id/fb_01"
+              		         android:id="@+id/fb_02"		         
+              		         android:gravity="center"
+              		         android:orientation="vertical">
+              		         <!-- 上下两行，第一行显示管户情况，第二行是个RelativeLayout -->
+              		         <TextView 
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:text="申报情况"
+              		                android:gravity="center_vertical"
+                         		        android:textSize="20sp" 
+              		                android:textColor="#0C6888"		       
+                        			     />
+                        		<!-- 下半部分三行，按钮居右， -->	     
+                               <RelativeLayout
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  >
+                                  <!-- 三个LinearLayout加一个Button -->
+                                  <!-- 管户总计 -->
+                                  <LinearLayout
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:id="@+id/gh_01"
+              		                android:orientation="horizontal"
+                                     >
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:text="累计申报："
+              		                  android:textColor="#0C6888"		       
+                        			     />
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:id="@+id/sj04"
+
+              		                  android:textColor="#0C6888"		       
+                        			     />          			     
+                                  </LinearLayout>
+                                  <!-- 其中税收管户 -->
+                                  <LinearLayout
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:orientation="horizontal"
+              		                android:layout_below="@+id/gh_01"
+              		                android:id="@+id/gh_02"
+                                     >
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:text="       查帐征收："
+              		                  android:textColor="#0C6888"		       
+                        			     />
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:id="@+id/sj05"
+           
+              		                  android:textColor="#0C6888"		       
+                        			     />                         
+                                  </LinearLayout>
+                                  <!-- 其中：社保管户 -->
+                                  <LinearLayout
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:orientation="horizontal"
+              		                android:layout_below="@+id/gh_02"
+              		                android:id="@+id/gh_03"		                
+                                     >
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:text="       其他征收："
+              		                  android:textColor="#0C6888"		       
+                        			     />
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:id="@+id/sj06"
+              		       
+              		                  android:textColor="#0C6888"		       
+                        			     />                       
+                                  </LinearLayout>
+                                  <!-- 详细情况按钮，据右 -->
+                                  <Button
+              						android:id="@+id/xx_sb"	 
+              						android:layout_alignParentRight="true"
+              						android:layout_width="wrap_content"
+              						android:layout_height="wrap_content"
+              						/>                   
+                               </RelativeLayout>
+              
+              		     </LinearLayout>    
+              
+                      	<!-- 征收情况 -->
+                          <LinearLayout android:layout_width="fill_parent"
+                      		 android:layout_height="wrap_content" 
+              		         android:layout_margin="3dip"
+              		         android:layout_below="@+id/fb_02"
+              		         android:id="@+id/fb_03"		         
+              		         android:padding="2dip"
+              		         android:layout_column="0" 
+              		         android:gravity="center"
+              		         android:orientation="vertical">
+              		         <!-- 上下两行，第一行显示管户情况，第二行是个RelativeLayout -->
+              		         <TextView 
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:text="征收情况"
+              		                android:gravity="center_vertical"
+                         		        android:textSize="20sp" 
+              		                android:textColor="#0C6888"		       
+                        			     />
+                        		<!-- 下半部分三行，按钮居右， -->	     
+                               <RelativeLayout
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  >
+                                  <!-- 三个LinearLayout加一个Button -->
+                                  <!-- 管户总计 -->
+                                  <LinearLayout
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:id="@+id/gh_01"
+              		                android:orientation="horizontal"
+                                     >
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:text="累计征收："
+              		                  android:textColor="#0C6888"		       
+                        			     />
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:id="@+id/sj07"
+          
+              		                  android:textColor="#0C6888"		       
+                        			     />          			     
+                                  </LinearLayout>
+                                  <!-- 其中税收管户 -->
+                                  <LinearLayout
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:orientation="horizontal"
+              		                android:layout_below="@+id/gh_01"
+              		                android:id="@+id/gh_02"
+                                     >
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:text="          已入库："
+              		                  android:textColor="#0C6888"		       
+                        			     />
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:id="@+id/sj08"
+              	
+              		                  android:textColor="#0C6888"		       
+                        			     />                         
+                                  </LinearLayout>
+                                  <!-- 其中：社保管户 -->
+                                  <LinearLayout
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:orientation="horizontal"
+              		                android:layout_below="@+id/gh_02"
+              		                android:id="@+id/gh_03"		                
+                                     >
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:text="          未入库："
+              		                  android:textColor="#0C6888"		       
+                        			     />
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:id="@+id/sj09"
+              		
+              		                  android:textColor="#0C6888"		       
+                        			     />                       
+                                  </LinearLayout>
+                                  <!-- 详细情况按钮，据右 -->
+                                  <Button
+              						android:id="@+id/xx_zs"	
+              						android:layout_alignParentRight="true"
+              						android:layout_width="wrap_content"
+              						android:layout_height="wrap_content"
+              						/>                   
+                               </RelativeLayout>
+              
+              		     </LinearLayout>    
+                      	<!-- 入库情况 -->
+                          <LinearLayout android:layout_width="fill_parent"
+                      		 android:layout_height="wrap_content" 
+              		         android:layout_margin="3dip"
+              		         android:padding="2dip"
+              		         android:layout_below="@+id/fb_03"
+              		         android:id="@+id/fb_04"		         
+              		         android:layout_column="0" 
+              		         android:gravity="center"
+              		         android:orientation="vertical">
+              		         <!-- 上下两行，第一行显示管户情况，第二行是个RelativeLayout -->
+              		         <TextView 
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:text="入库情况"
+              		                android:gravity="center_vertical"
+                         		        android:textSize="20sp" 
+              		                android:textColor="#0C6888"		       
+                        			     />
+                        		<!-- 下半部分三行，按钮居右， -->	     
+                               <RelativeLayout
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  >
+                                  <!-- 三个LinearLayout加一个Button -->
+                                  <!-- 管户总计 -->
+                                  <LinearLayout
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:id="@+id/gh_01"
+              		                android:orientation="horizontal"
+                                     >
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:text="累计入库："
+              		                  android:textColor="#0C6888"		       
+                        			     />
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:id="@+id/sj10"
+    
+              		                  android:textColor="#0C6888"		       
+                        			     />          			     
+                                  </LinearLayout>
+                                  <!-- 其中 -->
+                                  <LinearLayout
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:orientation="horizontal"
+              		                android:layout_below="@+id/gh_01"
+              		                android:id="@+id/gh_02"
+                                     >
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:text="          中央级："
+              		                  android:textColor="#0C6888"		       
+                        			     />
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:id="@+id/sj11"
+             
+              		                  android:textColor="#0C6888"		       
+                        			     />                         
+                                  </LinearLayout>
+                                  <LinearLayout
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:orientation="horizontal"
+              		                android:layout_below="@+id/gh_02"
+              		                android:id="@+id/gh_03"		                
+                                     >
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:text="          省    级："
+              		                  android:textColor="#0C6888"		       
+                        			     />
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:id="@+id/sj12"
+              		       
+              		                  android:textColor="#0C6888"		       
+                        			     />                       
+                                  </LinearLayout>
+                                  <LinearLayout
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:orientation="horizontal"
+              		                android:layout_below="@+id/gh_03"
+              		                android:id="@+id/gh_04"		                
+                                     >
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:text="          市    级："
+              		                  android:textColor="#0C6888"		       
+                        			     />
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:id="@+id/sj13"
+              		
+              		                  android:textColor="#0C6888"		       
+                        			     />                       
+                                  </LinearLayout>
+                                  <LinearLayout
+              		                android:layout_width="wrap_content"
+              		                android:layout_height="wrap_content"
+              		                android:orientation="horizontal"
+              		                android:layout_below="@+id/gh_04"
+              		                android:id="@+id/gh_05"		                
+                                     >
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:text="          县    级："
+              		                  android:textColor="#0C6888"		       
+                        			     />
+                                      <TextView 
+              		                  android:layout_width="wrap_content"
+              		                  android:layout_height="wrap_content"
+              		                  android:id="@+id/sj14"
+              
+              		                  android:textColor="#0C6888"		       
+                        			     />                       
+                                  </LinearLayout>
+                                  <!-- 详细情况按钮，据右 -->
+                                  <Button
+              						android:id="@+id/xx_rk"	
+              						android:layout_alignParentRight="true"
+              						android:layout_width="wrap_content"
+              						android:layout_height="wrap_content"
+              						/>                   
+                               </RelativeLayout>
+              
+              		     </LinearLayout>    
+
+              		</RelativeLayout>
+            </ScrollView> 
+            <LinearLayout android:layout_width="fill_parent"
+		                  android:layout_height="wrap_content" 
+		                  android:layout_alignParentBottom="true"
+		                  android:layout_weight="1" 
+		                  android:orientation="vertical">
+             		   <!-- 进入和退出按钮 -->     
+              		   <LinearLayout android:layout_width="fill_parent"
+              		        android:layout_height="wrap_content" 
+              		        android:layout_alignParentTop="true"
+              		        android:layout_weight="1"
+              		        android:orientation="horizontal">
+              								<Button
+              									android:text="分户明细"
+              									android:id="@+id/index"	
+              									android:background="@drawable/btn_custom"
+              									android:layout_width="wrap_content"
+              									android:layout_height="wrap_content"
+              									android:layout_marginLeft="10dip"
+              									android:layout_weight="1"
+              									/>
+              								<Button
+              									android:text="刷新数据"
+              									android:id="@+id/ref"	
+              									android:layout_width="wrap_content"
+              									android:background="@drawable/btn_custom"
+              									android:layout_height="wrap_content"
+              									android:layout_marginLeft="10dip"
+              									android:layout_weight="1"
+              									/>
+              								<Button
+              									android:text="返回"
+              									android:id="@+id/exit"	
+              									android:layout_weight="1"
+              									android:layout_width="wrap_content"
+              									android:background="@drawable/btn_custom"
+              									android:layout_height="wrap_content"
+              									android:layout_marginLeft="10dip"
+              									/>
+              
+                  	  </LinearLayout>     
+    	</LinearLayout> 
+ </RelativeLayout>
+ 

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 分户纳税人明细信息的滑动菜单里的选项ITEM用的   暂没用上.老不起作用 郁闷！！......-->
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+android:id/widget_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:background="@color/c3red"
+    android:paddingRight="?android:attr/scrollbarSize">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_gravity="center"
+        android:background="@color/c4green" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="6dip"
+        android:layout_marginBottom="6dip"
+        android:layout_weight="1"
+        android:background="@color/c7yellow">
+        <TextView
+         android:id="@+android:id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal" 
+            android:background="@color/c8purple"/>
+        <TextView
+         android:id="@+android:id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@android:id/title"
+            android:layout_alignLeft="@android:id/title"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:maxLines="2" />
+    </RelativeLayout>
+
+</LinearLayout> 

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 相对布局属性
+  android:layout_above 将该控件的底部至于给定ID的控件之上
+  android:layout_below 将该控件的顶部至于给定ID的控件之下
+  android:layout_toLeftOf 将该控件的右边缘和给定ID的控件的左边缘对齐
+  android:layout_toRightOf 将该控件的左边缘和给定ID的控件的右边缘对齐
+
+  android:layout_alignBaseline 该控件的baseline和给定ID的控件的baseline对齐
+  android:layout_alignBottom 将该控件的底部边缘与给定ID控件的底部边缘
+  android:layout_alignLeft 将该控件的左边缘与给定ID控件的左边缘对齐
+  android:layout_alignRight 将该控件的右边缘与给定ID控件的右边缘对齐
+  android:layout_alignTop 将给定控件的顶部边缘与给定ID控件的顶部对齐
+  
+  android:layout_alignParentBottom 如果该值为true，则将该控件的底部和父控件的底部对齐
+  android:layout_alignParentLeft 如果该值为true，则将该控件的左边与父控件的左边对齐
+  android:layout_alignParentRight 如果该值为true，则将该控件的右边与父控件的右边对齐
+  android:layout_alignParentTop 如果该值为true，则将空间的顶部与父控件的顶部对齐
+
+  android:layout_centerHorizontal 如果值为真，该控件将被至于水平方向的中央
+  android:layout_centerInParent 如果值为真，该控件将被至于父控件水平方向和垂直方向的中央
+  android:layout_centerVertical 如果值为真，该控件将被至于垂直方向的中央
+
+
+ -->
+ 
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_height="fill_parent"
+       android:layout_width="fill_parent"
+       android:background="@drawable/background">
+      <include layout="@layout/activity_public_title" />
+
+    	<!-- 下半部分，显示该用户总体信息 -->
+    	<RelativeLayout android:layout_width="fill_parent"
+		 android:layout_height="wrap_content" 
+		 android:layout_below="@+id/main_title"
+		 android:layout_margin="5dip"
+		 android:padding="4dip"
+		 android:layout_column="0" 
+		 android:orientation="vertical">
+        	<!-- 底部WebView -->
+    	   <WebView android:id="@+id/v_webview" 
+    	        android:layout_width="wrap_content"
+		        android:gravity="center_vertical" 
+		        android:layout_height="wrap_content" />
+		   <!-- 进入和退出按钮 -->     
+		   <LinearLayout android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" 
+		        android:layout_alignParentBottom="true"
+		        android:layout_weight="1"
+		        android:orientation="horizontal">
+								<Button
+									android:text="刷新数据"
+									android:id="@+id/ref"	
+									android:background="@drawable/btn_custom"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginLeft="10dip"
+									android:layout_weight="1"
+									/>
+								<Button
+									android:text="返回"
+									android:id="@+id/exit"	
+									android:layout_weight="1"
+									android:background="@drawable/btn_custom"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginLeft="10dip"
+									/>
+
+    	  </LinearLayout>         
+		</RelativeLayout>   
+ </RelativeLayout>
+ 

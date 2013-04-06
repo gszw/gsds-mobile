@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+     		<!-- 定义登录界面框的样式-圆角矩形及渐变色 -->
+<gradient 
+		android:startColor="@color/c004" 
+		android:endColor="@color/c005" 
+		android:angle="-90"/> 
+<corners android:radius="10dp" /> 
+</shape>

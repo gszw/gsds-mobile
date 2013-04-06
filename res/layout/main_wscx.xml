@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="75dip">
+    <RelativeLayout
+         android:id="@+id/wscx_topsousuo"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/shape_juxing_white"
+         android:gravity="center_vertical"
+         android:layout_below="@id/bt_Radio"> 
+            <Button android:id="@+id/bt_Radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_juxing_gray"
+                android:layout_margin="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:textColor="@color/c2black"
+                android:drawableLeft="@drawable/bt_ss"
+                android:text="编码"/>
+
+				<EditText
+				android:id="@+id/tv_tj"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:stretchColumns="true"
+				android:background="@null"
+				android:textSize="13sp"
+				android:hint="!请输入查询条件"
+				android:layout_toRightOf="@id/bt_Radio"
+				android:layout_alignBaseline="@id/bt_Radio"
+				android:singleLine="true"
+				/>
+				
+				<Button android:id="@+id/button2"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_gravity="top"
+				android:background="@drawable/sousuo"
+				android:layout_alignBaseline="@id/bt_Radio"
+				android:layout_alignParentRight="true"
+
+		/>  
+           
+           </RelativeLayout>
+    <LinearLayout 
+        android:id="@+id/mainlinear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+      <ListView android:layout_height="fill_parent"
+			android:layout_width="fill_parent" 
+			android:layout_below="@+id/wscx_topsousuo"
+			android:id="@+id/gg_list"
+			android:cacheColorHint="#000000"
+			android:listSelector="@android:color/transparent"
+			>
+      </ListView>
+     
+</RelativeLayout>

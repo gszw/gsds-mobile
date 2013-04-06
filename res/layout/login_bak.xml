@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/denglubg"
+    android:orientation="horizontal" >
+    
+    <RelativeLayout  
+        android:layout_height="300dip"  
+        android:layout_width="fill_parent"> 
+        <RelativeLayout  
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"  
+            android:layout_height="wrap_content"  
+            android:layout_width="fill_parent"  
+            android:background="@drawable/loginbg"> 
+
+            	  <LinearLayout
+            	      android:layout_width="wrap_content"
+            	      android:layout_height="wrap_content"
+            	      android:layout_alignParentTop="true"
+            	      android:orientation="vertical" >
+
+				  <LinearLayout
+				    	android:orientation="horizontal"
+				    	android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:layout_alignParentTop="true"
+				    	>
+				    	<ImageView
+				    		android:layout_width="22px"
+				    		android:layout_height="38px"
+				    		android:src="@drawable/logo"
+				    		style="@style/logoText"/>
+				    	<TextView 
+				    		android:layout_width="fill_parent"
+				    		android:layout_height="38px"
+				    		style="@style/logoText"
+				    		android:text="1111111111111111"
+				    		/>
+				    </LinearLayout>
+            
+            
+					 	<RelativeLayout
+                            android:layout_width="fill_parent"  
+                            android:layout_height="fill_parent"  
+
+                           
+                            >  
+                            <TextView 
+								android:text="@string/uid"
+								android:id="@+id/account_view"
+								android:layout_width="70dip"
+								android:layout_height="50dip"
+								style="@style/style_1"
+								android:layout_marginTop="20dip"
+								android:layout_marginLeft="40dip"
+								android:layout_alignParentLeft="true"
+								android:layout_alignParentTop="true"
+								/> 
+                                
+                             <EditText
+								android:id="@+id/account_edit"	
+								android:padding="5dip" 	
+								android:layout_width="170dip"
+								android:layout_height="40dip"
+								android:singleLine="true"
+								android:textColor="@color/c2black"
+								android:background="@drawable/inputbg"
+								android:layout_marginLeft="5dip"
+								android:layout_marginBottom="5dip"
+								android:layout_alignBaseline="@id/account_view"
+								
+								android:layout_toRightOf="@id/account_view"/>
+                    
+                            <TextView 
+								android:text="@string/pwd"
+								android:id="@+id/password_view"
+								android:layout_width="70dip"
+								android:layout_height="50dip"
+								style="@style/style_1"
+								android:layout_below="@id/account_view"
+								android:layout_alignLeft="@id/account_view"/> 
+                                
+                             <EditText
+								android:id="@+id/password_edit"	
+								android:padding="5dip" 	
+								android:layout_width="170dip"
+								android:layout_height="40dip"
+								android:singleLine="true"
+								android:gravity="clip_horizontal"
+								android:password="true"
+								android:background="@drawable/inputbg"
+								android:textColor="@color/c2black"
+								android:layout_alignBaseline="@id/password_view"
+								android:layout_alignLeft="@id/account_edit"
+								android:layout_toRightOf="@id/password_view"/> 
+								
+
+								<Button
+									android:text="@string/cancelButton"
+									android:id="@+id/cancel_bt"
+									android:width="100px"		
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_below="@id/password_view"
+									android:layout_marginLeft="10dip"
+									android:layout_alignLeft="@id/password_view"
+									android:focusable="false"	
+									android:background="@drawable/btn_custom"
+									style="@style/style_1"
+									/>
+								<Button
+									android:text="@string/loginButton"
+									android:id="@+id/login_bt"
+									android:width="100px"	
+									android:focusable="true"	
+									android:background="@drawable/btn_custom"	
+									style="@style/style_1"	
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_below="@id/password_edit"
+									android:layout_alignTop="@id/cancel_bt"
+									android:layout_toRightOf="@id/cancel_bt"
+									android:layout_marginLeft="20dip"
+									/>	
+			
+								 
+								
+								
+		 <LinearLayout android:layout_gravity="center_horizontal"
+					  android:orientation="horizontal"
+					  android:layout_width="fill_parent"
+					  android:layout_height="wrap_content"	
+					  android:layout_below="@id/cancel_bt"	
+					  android:layout_alignLeft="@id/cancel_bt"			  
+					  >		
+			<CheckBox
+				android:id="@+id/cbRemember"
+				android:text="@string/cbRemember"				
+				android:checked="false"
+				android:textColor="@color/c2black"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+			<CheckBox
+				android:id="@+id/auto_login"
+				android:text="@string/auto_login"
+				android:checked="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				style="@style/sty_login_chb"/>	
+
+		</LinearLayout>	
+			
+			
+			
+                        </RelativeLayout> 
+		</LinearLayout>
+
+ 			</RelativeLayout>			
+ </RelativeLayout>
+</LinearLayout>
