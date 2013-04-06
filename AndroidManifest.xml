@@ -50,8 +50,7 @@
             android:name="cn.com.gszw.mzgxt.client.DhcxActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
-            android:name="cn.com.gszw.mzgxt.client.DjNsryhscxActivity"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+            android:name="cn.com.gszw.mzgxt.client.DjNsryhscxActivity"/>
         <activity
             android:name="cn.com.gszw.mzgxt.client.FhmxActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
