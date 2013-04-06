@@ -25,63 +25,63 @@ import android.net.NetworkInfo;
 
 public class HttpUtil {
 	// 下面这个地址是服务器测试地址
-	 public static final String IpUrl = "http://61.178.227.192:7008";
+	 //public static final String IpUrl = "http://61.178.227.192:7008/server/";
 	// 下面这个地址是本地测试地址
-	//public static final String IpUrl = "http://10.92.67.240:8080";
+	public static final String IpUrl = "http://10.92.67.240:8080/server/";
 //	public static final String IpUrl = "http://192.168.10.100:8089";
 	// 登陆地址
-	public static final String loginURL = IpUrl + "/server/LoginServlet";
+	public static final String loginURL = IpUrl + "LoginServlet";
 	// 按编码查询纳税人
-	public static final String getNsrxxURL = IpUrl + "/server/QueryNsrxx";
+	public static final String getNsrxxURL = IpUrl + "QueryNsrxx";
 	// 按名称查询纳税人
 	public static final String getNsrxxListURL = IpUrl
-			+ "/server/QueryNsrxxList";
+			+ "QueryNsrxxList";
 	// 按名称查询纳税人总数
 	public static final String getNsrxxTotalURL = IpUrl
-			+ "/server/QueryNsrxxTotal";
+			+ "QueryNsrxxTotal";
 	// 获得纳说人基本信息
 	public static final String getNsrBasicInfo = IpUrl
-			+ "/server/QueryNsrBasicInfo";
+			+ "QueryNsrBasicInfo";
 
 	// 获得纳说人银行信息
-	public static final String getNsrYhList = IpUrl + "/server/QueryNsrYhList";
+	public static final String getNsrYhList = IpUrl + "QueryNsrYhList";
 
 	// 获得纳说人分页数据
-	public static final String getNsrList = IpUrl + "/server/GetNsrList";
+	public static final String getNsrList = IpUrl + "GetNsrList";
 
 	// 获得纳说人总条数
-	public static final String getNsrCount = IpUrl + "/server/GetNsrCount";
+	public static final String getNsrCount = IpUrl + "GetNsrCount";
 
 	// 根所手机号，取税务人员编码
-	public static final String Getswrysjh = IpUrl + "/server/GetSwrySjh";
+	public static final String Getswrysjh = IpUrl + "GetSwrySjh";
 	// 获得税收核定信息
-	public static final String getHdssList = IpUrl + "/server/GetHdssList";
+	public static final String getHdssList = IpUrl + "GetHdssList";
 	// 获得纳税人停复业信息
-	public static final String getNsrTfyxx = IpUrl + "/server/GetNsrTfyxx";
+	public static final String getNsrTfyxx = IpUrl + "GetNsrTfyxx";
 	// 获得纳税人申报信息总表
-	public static final String GetSbList = IpUrl + "/server/GetSbList";
+	public static final String GetSbList = IpUrl + "GetSbList";
 	// 获得纳税人缴款 信息总表
-	public static final String GetJkList = IpUrl + "/server/GetJkList";
+	public static final String GetJkList = IpUrl + "GetJkList";
 	// 判断登陆人员是不是专管员
-	public static final String GetIfZgy = IpUrl + "/server/GetIfZgy";
+	public static final String GetIfZgy = IpUrl + "GetIfZgy";
 	// 判断登陆人员是不是专管员
-	public static final String SysPzCx = IpUrl + "/server/PzCxList";
+	public static final String SysPzCx = IpUrl + "PzCxList";
 
 	// 读取主界面信息
-	public static final String GetDefault = IpUrl + "/server/GetDefault";
+	public static final String GetDefault = IpUrl + "GetDefault";
 
 	// 用户注册信息
-	public static final String Sjxxzc = IpUrl + "/server/Sjxxzc";
+	public static final String Sjxxzc = IpUrl + "Sjxxzc";
 
 	// 用户注册信息
-	public static final String GetNsrxxBybm = IpUrl + "/server/GetNsrxxBybm";
+	public static final String GetNsrxxBybm = IpUrl + "GetNsrxxBybm";
 
 	// 查询通知公告信息
-	public static final String Gettzgg = IpUrl + "/server/GetTzgg";
+	public static final String Gettzgg = IpUrl + "GetTzgg";
 
-	public static final String Gettzggmx = IpUrl + "/server/GetTzggmx";
+	public static final String Gettzggmx = IpUrl + "GetTzggmx";
 	
-	public static final String LoginZgxt=IpUrl+"/server/LoginZgxt";
+	public static final String LoginZgxt=IpUrl+"LoginZgxt";
 
 	// 获得get请求对象
 	public static HttpGet getHttpGet(String url) {

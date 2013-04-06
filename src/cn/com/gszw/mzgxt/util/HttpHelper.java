@@ -39,8 +39,8 @@ import android.net.NetworkInfo;
  * @author 赵帆
  */
 public class HttpHelper extends Thread {
-	private static final String IPURL_STRING = "http://61.178.227.192:7008/server/";
-	//private static final String IPURL_STRING = "http://10.92.67.240:8080/server/";
+	//private static final String IPURL_STRING = "http://61.178.227.192:7008/server/";
+	private static final String IPURL_STRING = "http://10.92.67.240:8080/server/";
 	private static String result = null;
 	private static HttpPost mHttpPost = null;
 	private static HttpParams mHttpParams = null;

@@ -140,7 +140,7 @@ public class LoginActivity extends Activity {
 			params.add(new BasicNameValuePair("telId", ""));
 			try {
 				result = HttpHelper.getStringByPost(LoginActivity.this,
-						"LoginServlet", params);
+						"LoginZgxt", params);
 				JSONObject mJsonObject = new JSONObject(result);
 				if (mJsonObject != null) {
 					fhjg = mJsonObject.getString("fhjg");
