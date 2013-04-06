@@ -16,27 +16,37 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
+import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import cn.com.gszw.mzgxt.R;
+import cn.com.gszw.mzgxt.util.AsyncImageLoader;
 import cn.com.gszw.mzgxt.util.HttpUtil;
+import cn.com.gszw.mzgxt.util.AsyncImageLoader.ImageCallback;
 
 public class TzggmxActivity extends Activity {
 
 	private String xh;
+	private String image;
 	private String userKey;
 	TextView title ;
 	TextView author;
 	TextView create_time;
 	TextView contxt;
+	ImageView v_image;
+	private AsyncImageLoader asyncImageLoader;
 
 	ProgressDialog pb1;// 进度条
 
@@ -48,11 +58,13 @@ public class TzggmxActivity extends Activity {
 		Intent intent = this.getIntent();
 		Bundle bundle = intent.getExtras();
 		xh = bundle.getString("xh");
+		image = bundle.getString("image");
 		userKey = bundle.getString("userKey");
 		DataInit();
 	}
 	
 	public void DataInit(){
+		asyncImageLoader = new AsyncImageLoader();
 		TextView mTextView=(TextView)findViewById(R.id.txt_activity_public_title);
 		mTextView.setText("公告详情");
 		Button btnExit = (Button) findViewById(R.id.btn_activity_public_exit);
@@ -65,6 +77,7 @@ public class TzggmxActivity extends Activity {
 		author = (TextView)findViewById(R.id.author);
 		create_time = (TextView)findViewById(R.id.create_time);
 		contxt = (TextView)findViewById(R.id.contxt);
+		v_image = (ImageView)findViewById(R.id.v_image);
 		pb1 = new ProgressDialog(TzggmxActivity.this);
 		 processThread();
 		
@@ -88,11 +101,19 @@ public class TzggmxActivity extends Activity {
 			} else {
 			try {
 				JSONObject obj = new JSONObject(jsonPages);
-				System.out.println("输出点什么吧");
 				title.setText(obj.getString("title"));
 				author.setText(obj.getString("author"));
 				contxt.setText(obj.getString("contxt"));
 				create_time.setText(obj.getString("create_time"));
+				Drawable cachedImage = asyncImageLoader.loadDrawable(
+						obj.getString("image"), v_image,
+						new ImageCallback() {
+							@Override
+							public void imageLoaded(Drawable imageDrawable,
+									ImageView imageView, String imageUrl) {
+								imageView.setImageDrawable(imageDrawable);
+							}
+						});
 			} catch (JSONException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

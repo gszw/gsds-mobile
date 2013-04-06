@@ -15,7 +15,7 @@
             android:textSize="14sp"
 			android:textStyle="bold"
 			android:textColor="#ffffff" 
-            android:background="@drawable/return_button_shape"/>
+            android:background="@drawable/drawable_btn_callback"/>
 		 <TextView
             style="@style/sty_title_pt"
             android:layout_width="fill_parent"

@@ -3,7 +3,13 @@
        android:layout_height="fill_parent"
        android:layout_width="fill_parent"
        android:background="@drawable/background">
-  <include layout="@layout/activity_public_title" />
+      <include layout="@layout/activity_public_title" />
+       <ScrollView android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:scrollbars="vertical"
+             android:layout_below="@+id/main_title"
+		     android:orientation="vertical"
+		     >      
 	 <LinearLayout 
 	      android:layout_width="fill_parent"
 	      android:layout_height="wrap_content"
@@ -15,7 +21,7 @@
 		    android:id="@+id/title"
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
-		    android:textColor="@color/c_title"
+		    android:textColor="@color/c2black"
 		    android:layout_gravity="center_horizontal"
 		    android:textStyle="bold"
 		    android:text="请输入标题"
@@ -31,7 +37,7 @@
 		<TextView 
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
-		    android:textColor="@color/c_title"
+		    android:textColor="@color/c2black"
 		    android:text="作者："
 		    android:gravity="center"
 		    android:textSize="12sp"
@@ -40,7 +46,7 @@
 		    android:id="@+id/author"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
-		    android:textColor="@color/c_title"
+		    android:textColor="@color/c2black"
 		    android:text="请输入时间"
 		    android:gravity="center"
 		    android:textSize="12sp"
@@ -55,7 +61,7 @@
 		<TextView 
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
-		    android:textColor="@color/c_title"
+		    android:textColor="@color/c2black"
 		    android:text="更新时间："
 		    android:gravity="center"
 		    android:textSize="12sp"
@@ -64,7 +70,7 @@
 		    android:id="@+id/create_time"
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
-		    android:textColor="@color/c_title"
+		    android:textColor="@color/c2black"
 		    android:text="请输入时间"
 		    android:gravity="center"
 		    android:textSize="12sp"
@@ -75,22 +81,31 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:src="@drawable/line"
-		    />
+		    /> 
 		<RelativeLayout
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
 		     >
+		
+		<ImageView 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_margin="10dp"
+			android:layout_centerHorizontal="true"
+			android:layout_below="@+id/contxt"
+			android:id="@+id/v_image" />
 		<TextView 
 		    android:layout_marginTop="10dip"
 		    android:layout_marginLeft="12dip"
-		    android:layout_marginRight="12dip"
 		    android:id="@+id/contxt"
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
-		    android:textColor="@color/c_title"
+		    android:ellipsize="end"
+		    android:textColor="@color/c2black"
 		    android:text="请输入内容"
 		    android:textSize="14sp"
 		    />
-		</RelativeLayout>
+		</RelativeLayout>   
 </LinearLayout>
+</ScrollView>
 </RelativeLayout>

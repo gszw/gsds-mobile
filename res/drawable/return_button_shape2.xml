@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+ 		<!-- 定义填充渐变颜色 -->
+	<gradient 
+		android:startColor="@color/c006" 
+		android:endColor="@color/c007" 
+		android:angle="-90"/> 
+	<stroke android:width="1dp" android:color="@color/c_title" />
+<corners android:radius="10dp" /> 
+</shape>

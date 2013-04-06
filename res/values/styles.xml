@@ -29,6 +29,10 @@
 		<item name="android:textSize">@dimen/df2</item>
 		<item name="android:textColor">@color/c1white</item>
      </style> 
+     <style name="style_2"> 
+		<item name="android:textSize">@dimen/df2</item>
+		<item name="android:textColor">@color/c2black</item>
+     </style> 
      
          <!-- 淡蓝色的，登录界面上的字体 -->
 	<style name="sty_login_title"> 

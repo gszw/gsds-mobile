@@ -30,6 +30,13 @@
     <string name="next">下一页</string>
     <string name="title_quyu">甘肃地税</string>
     <string name="title_zgxt">移动征管系统</string>
+    <string name="title_android">移动征管系统Android版</string>
+    <string name="version">2.0 版</string>
+    <string name="copyright01">移动征管系统版权所有</string>
+    <string name="copyright02">Copyright © 2012-2014 GSZW.Corp.All Rights Reserved</string>
+    <string name="about_author">\t\t本软件由王朝玉、王栗、赵帆、邓国丽等工程师开发并维护。</string>
+    <string name="about_content">\t\t本软件旨在为税务人员提供一个方便、快捷、有效的征管系统手机端平台，满足税务人员对征管系统内纳税人基本信息、
+                                申报、征收、入库情况、发票、税票开具信息、待办任务的查询，及时了解相关新闻公告。</string>
     <string name="title_pt01">税管员平台</string>
     <string name="reset">系统设置</string>
     <string name="update">版本更新</string>
@@ -59,17 +66,6 @@
     <string name="main_06">管户分布</string>
     <string name="main_07">版本更新</string>
     <string name="main_08">退出系统</string>
-    <string name="module_01">您所在模块:[分户明细模块]</string>
-    <string name="module_02">您所在模块:[总体分析模块]</string>
-    <string name="module_03">您所在模块:[发票查询模块]</string>
-    <string name="module_04">您所在模块:[税票查询模块]</string>
-    <string name="module_05">您所在模块:[单户查询模块]</string>
-    <string name="module_06">您所在模块:[管户分布模块]</string>
-    <string name="module_07">您所在模块:[版本更新模块]</string>
-    <string name="module_08">您所在模块:[退出系统模块]</string>
-    <string name="module_09">您所在模块:[申报分析模块]</string>
-    <string name="module_10">您所在模块:[征收分析模块]</string>
-    <string name="module_11">您所在模块:[入库分析模块]</string>
     <string name="maintop">移动征管系统税管员平台</string>
     <string name="welcome_sjzgxt">欢迎登录甘肃地税移动征管系统税管员平台</string>
     <string name="YH_title">纳税人银行信息列表</string>
@@ -85,13 +81,15 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!!!</string>
-    <string name="maintab1">通知公告</string>
+    <string name="maintab1">新闻公告</string>
     <string name="maintab2">分户明细</string>
-    <string name="maintab3">票据查询</string>    
+    <string name="maintab3">票据查询</string>
     <string name="maintab4">待办任务</string>
     <string name="maintab5">统计分析</string>
     <string name="choose_text">选择</string>
-    <string name="sys_sz">设  置</string> 
+    <string name="sys_sz">设  置</string>
     <string name="sys_gb">关  闭</string>
     <string name="zwxx">暂无信息</string>
+    <string name="title_activity_about">AboutActivity</string>
+
 </resources>

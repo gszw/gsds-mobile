@@ -54,6 +54,14 @@ public class UpdateActivity extends Activity {
 		getServerVerCode();
 		int verCode = Config.getVerCode(this);
 		String verName = Config.getVerName(this);
+		TextView mTextView=(TextView)findViewById(R.id.txt_activity_public_title);
+		mTextView.setText("版本更新");
+		Button btnExit = (Button) findViewById(R.id.btn_activity_public_exit);
+		btnExit.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				UpdateActivity.this.finish();
+			}
+		});
 		// 显示服务器版本号
 		TextView ver_ffq = (TextView) findViewById(R.id.ver_ffq);
 		ver_ffq.setText("版本号：" + newVerName + "  Code:" + newVerCode);
@@ -84,12 +92,6 @@ public class UpdateActivity extends Activity {
 				// 让ProgressDialog显示
 				pBar.show();
 				downFile(Config.UPDATE_SERVER + Config.UPDATE_APKNAME);
-			}
-		});
-		Button bt2 = (Button) findViewById(R.id.exit_bt);
-		bt2.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				UpdateActivity.this.finish();
 			}
 		});
 

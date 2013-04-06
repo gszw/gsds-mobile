@@ -2,6 +2,7 @@ package cn.com.gszw.fragment;
 
 import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.client.TzggmxActivity;
+
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -19,9 +20,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import cn.com.gszw.mzgxt.util.AsyncImageLoader.ImageCallback;
-
 import cn.com.gszw.mzgxt.util.AsyncImageLoader;
-
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -105,6 +104,7 @@ public class Tzgg_Fragment extends Fragment implements OnScrollListener {
 				bundle.putString("userKey", userKey);
 				try {
 					bundle.putString("xh", list.get(arg2).get("xh").toString());
+					bundle.putString("image", list.get(arg2).get("image").toString());
 				} catch (JSONException e) {
 					e.printStackTrace();
 				}

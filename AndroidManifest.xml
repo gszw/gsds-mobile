@@ -28,8 +28,6 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
-
-        <!-- <activity android:name="cn.com.gszw.mzgxt.client.FWelcomeActivity" > -->
         <activity
             android:name="cn.com.gszw.mzgxt.client.LoginPanduan"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
@@ -48,26 +46,48 @@
         <activity
             android:name="cn.com.gszw.mzgxt.client.MainActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-        <activity android:name="cn.com.gszw.mzgxt.client.DhcxActivity" />
-        <activity android:name="cn.com.gszw.mzgxt.client.DjNsryhscxActivity" />
-        <activity android:name="cn.com.gszw.mzgxt.client.FhmxActivity" />
+        <activity
+            android:name="cn.com.gszw.mzgxt.client.DhcxActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="cn.com.gszw.mzgxt.client.DjNsryhscxActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="cn.com.gszw.mzgxt.client.FhmxActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name="cn.com.gszw.mzgxt.client.FpcxActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-        <activity android:name="cn.com.gszw.mzgxt.client.GhfbActivity" />
-        <activity android:name="cn.com.gszw.mzgxt.client.PublicActivity" />
-        <activity android:name="cn.com.gszw.mzgxt.client.PzcxmxActivity" />
-        <activity android:name="cn.com.gszw.mzgxt.client.RkLjrkqkActivity" />
-        <activity android:name="cn.com.gszw.mzgxt.client.SbLjsbqkActivity" />
-        <activity android:name="cn.com.gszw.mzgxt.client.SbNsrsbxxActivity" />
+        <activity
+            android:name="cn.com.gszw.mzgxt.client.GhfbActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="cn.com.gszw.mzgxt.client.PublicActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="cn.com.gszw.mzgxt.client.PzcxmxActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="cn.com.gszw.mzgxt.client.RkLjrkqkActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="cn.com.gszw.mzgxt.client.SbLjsbqkActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="cn.com.gszw.mzgxt.client.SbNsrsbxxActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name="cn.com.gszw.mzgxt.client.SpcxActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name="cn.com.gszw.mzgxt.client.UpdateActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-        <activity android:name="cn.com.gszw.mzgxt.client.ZsLjzsqkActivity" />
-        <activity android:name="cn.com.gszw.mzgxt.client.ZsNsrjkxxActivity" />
+        <activity
+            android:name="cn.com.gszw.mzgxt.client.ZsLjzsqkActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="cn.com.gszw.mzgxt.client.ZsNsrjkxxActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name="cn.com.gszw.mzgxt.client.ZtfxActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
@@ -79,6 +99,9 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name="cn.com.gszw.mzgxt.client.LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="cn.com.gszw.mzgxt.client.AboutActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
     </application>
 

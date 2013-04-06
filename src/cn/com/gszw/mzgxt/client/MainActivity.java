@@ -134,14 +134,15 @@ public class MainActivity extends FragmentActivity implements Fragment_Listener 
 				switch ((Integer) t1) {
 				// 设置菜单-系统设置
 				case R.drawable.shezhi01:
-					Toast.makeText(getApplicationContext(), "写点什么吧？？",
+					Toast.makeText(getApplicationContext(), "此功能正在开发中！",
 							Toast.LENGTH_SHORT).show();
 					break;
 
 				// 设置菜单-版本更新
 				case R.drawable.shezhi02:
-					Toast.makeText(getApplicationContext(), "写点什么吧？？",
-							Toast.LENGTH_SHORT).show();
+					pop.dismiss();
+					startActivity(new Intent(MainActivity.this,
+							UpdateActivity.class));
 					break;
 
 				// 设置菜单-重新登录
@@ -160,9 +161,11 @@ public class MainActivity extends FragmentActivity implements Fragment_Listener 
 				// 设置菜单-关于
 				case R.drawable.shezhi04:
 
-					Toast.makeText(getApplicationContext(), "写点什么吧？？",
-							Toast.LENGTH_SHORT).show();
+					pop.dismiss();
+					startActivity(new Intent(MainActivity.this,
+							AboutActivity.class));
 					break;
+
 
 				// 设置菜单-退出登录
 				case R.drawable.shezhi05:

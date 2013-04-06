@@ -13,11 +13,12 @@
 			android:gravity="center"
 			android:layout_margin="10dp"
 			android:paddingBottom="10dp"
+			android:scaleType="fitXY"
 			android:id="@+id/v_image" />	
 		<TextView  
 		    android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textColor="@color/c_title" 
+			android:textColor="@color/c2black" 
 			android:layout_marginRight="10dp"
 			android:layout_marginTop="10dp"
 			android:textSize="16sp"
@@ -29,7 +30,7 @@
 		<TextView 
 		    android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textColor="@color/c_title"
+			android:textColor="@color/c2black"
 			android:layout_marginRight="10dp" 
 			android:textSize="12sp" 
 			android:layout_toRightOf="@+id/v_image"
@@ -38,7 +39,7 @@
 		<TextView 
 		    android:layout_width="wrap_content" 
 			android:layout_height="wrap_content" 
-			android:textColor="@color/c_title"
+			android:textColor="@color/c2black"
 			android:layout_marginRight="10dp"
 			android:textSize="12sp" 
 			android:layout_alignParentRight="true"

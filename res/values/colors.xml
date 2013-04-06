@@ -17,6 +17,8 @@
     <color name="c003">#007EA8</color><!--深蓝色 -->
     <color name="c004">#7DC9FB</color><!--淡蓝色 -->
     <color name="c005">#D3ECFE</color><!--更淡蓝色 -->
+    <color name="c006">#65b0fc</color><!--返回按钮使用的淡蓝色 -->
+    <color name="c007">#52a6fb</color><!--返回按钮使用的深蓝色 -->
     <color name="c_title">#0C6888</color><!--标题颜色 -->
     <color name="c_menu">#4b4d4d</color>
     <color name="c_tab_bg">#04508b</color> 

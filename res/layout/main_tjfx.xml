@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingTop="75dip">
     
 
     <ScrollView android:layout_width="fill_parent"
@@ -9,7 +10,7 @@
              android:scrollbars="vertical"
              android:layout_below="@+id/main_title"
 		     android:orientation="vertical"
-		     android:paddingTop="75dip">      
+		     >      
                    
                   	<RelativeLayout android:layout_width="fill_parent"
               		 android:layout_height="wrap_content"              		 
@@ -37,7 +38,7 @@
               		                android:text="管户分布"
               		                android:gravity="center_vertical"
                          		        android:textSize="20sp" 
-              		                android:textColor="#0C6888"		       
+              		                android:textColor="@color/c2black"		       
                         			     />
                         		<!-- 下半部分三行，按钮居右， -->	     
                                <RelativeLayout
@@ -58,14 +59,14 @@
               		                  android:layout_height="wrap_content"
               		                  android:text="总计："
               		              
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />
                                       <TextView 
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:id="@+id/sj01"
  
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />          			     
                                   </LinearLayout>
                                   <!-- 其中税收管户 -->
@@ -80,14 +81,14 @@
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:text="          税收管户："
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />
                                       <TextView 
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:id="@+id/sj02"
 
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />                         
                                   </LinearLayout>
                                   <!-- 其中：社保管户 -->
@@ -103,14 +104,14 @@
               		                  android:layout_height="wrap_content"
               		                  android:text="          社保管户："
               		                  
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />
                                       <TextView 
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
 
               		                  android:id="@+id/sj03"
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />                       
                                   </LinearLayout>
                                   <!-- 详细情况按钮，据右 -->
@@ -143,7 +144,7 @@
               		                android:text="申报情况"
               		                android:gravity="center_vertical"
                          		        android:textSize="20sp" 
-              		                android:textColor="#0C6888"		       
+              		                android:textColor="@color/c2black"		       
                         			     />
                         		<!-- 下半部分三行，按钮居右， -->	     
                                <RelativeLayout
@@ -163,14 +164,14 @@
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:text="累计申报："
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />
                                       <TextView 
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:id="@+id/sj04"
 
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />          			     
                                   </LinearLayout>
                                   <!-- 其中税收管户 -->
@@ -185,14 +186,14 @@
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:text="       查帐征收："
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />
                                       <TextView 
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:id="@+id/sj05"
            
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />                         
                                   </LinearLayout>
                                   <!-- 其中：社保管户 -->
@@ -207,14 +208,14 @@
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:text="       其他征收："
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />
                                       <TextView 
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:id="@+id/sj06"
               		       
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />                       
                                   </LinearLayout>
                                   <!-- 详细情况按钮，据右 -->
@@ -247,7 +248,7 @@
               		                android:text="征收情况"
               		                android:gravity="center_vertical"
                          		        android:textSize="20sp" 
-              		                android:textColor="#0C6888"		       
+              		                android:textColor="@color/c2black"		       
                         			     />
                         		<!-- 下半部分三行，按钮居右， -->	     
                                <RelativeLayout
@@ -267,14 +268,14 @@
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:text="累计征收："
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />
                                       <TextView 
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:id="@+id/sj07"
           
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />          			     
                                   </LinearLayout>
                                   <!-- 其中税收管户 -->
@@ -289,14 +290,14 @@
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:text="          已入库："
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />
                                       <TextView 
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:id="@+id/sj08"
               	
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />                         
                                   </LinearLayout>
                                   <!-- 其中：社保管户 -->
@@ -311,14 +312,14 @@
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:text="          未入库："
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />
                                       <TextView 
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:id="@+id/sj09"
               		
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />                       
                                   </LinearLayout>
                                   <!-- 详细情况按钮，据右 -->
@@ -350,7 +351,7 @@
               		                android:text="入库情况"
               		                android:gravity="center_vertical"
                          		        android:textSize="20sp" 
-              		                android:textColor="#0C6888"		       
+              		                android:textColor="@color/c2black"		       
                         			     />
                         		<!-- 下半部分三行，按钮居右， -->	     
                                <RelativeLayout
@@ -370,14 +371,14 @@
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:text="累计入库："
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />
                                       <TextView 
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:id="@+id/sj10"
     
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />          			     
                                   </LinearLayout>
                                   <!-- 其中 -->
@@ -392,14 +393,14 @@
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:text="          中央级："
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />
                                       <TextView 
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:id="@+id/sj11"
              
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />                         
                                   </LinearLayout>
                                   <LinearLayout
@@ -413,14 +414,14 @@
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:text="          省    级："
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />
                                       <TextView 
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:id="@+id/sj12"
               		       
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />                       
                                   </LinearLayout>
                                   <LinearLayout
@@ -434,14 +435,14 @@
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:text="          市    级："
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />
                                       <TextView 
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:id="@+id/sj13"
               		
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />                       
                                   </LinearLayout>
                                   <LinearLayout
@@ -455,14 +456,14 @@
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:text="          县    级："
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />
                                       <TextView 
               		                  android:layout_width="wrap_content"
               		                  android:layout_height="wrap_content"
               		                  android:id="@+id/sj14"
               
-              		                  android:textColor="#0C6888"		       
+              		                  android:textColor="@color/c2black"		       
                         			     />                       
                                   </LinearLayout>
                                   <!-- 详细情况按钮，据右 -->
