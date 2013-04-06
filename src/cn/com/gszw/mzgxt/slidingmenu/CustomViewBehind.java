@@ -1,6 +1,6 @@
 package cn.com.gszw.mzgxt.slidingmenu;
 
-import cn.com.gszw.mzgxt.client.R;
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.slidingmenu.SlidingMenu.CanvasTransformer;
 import android.content.Context;
 import android.graphics.Bitmap;

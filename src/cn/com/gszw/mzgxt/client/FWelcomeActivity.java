@@ -2,6 +2,7 @@ package cn.com.gszw.mzgxt.client;
 
 import java.util.ArrayList;
 
+import cn.com.gszw.mzgxt.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -89,6 +90,7 @@ public class FWelcomeActivity extends Activity {
 			// Toast.LENGTH_SHORT).show();
 			startActivity(new Intent(FWelcomeActivity.this,
 					WelcomeActivity.class));
+			FWelcomeActivity.this.finish();
 
 		}
 	}

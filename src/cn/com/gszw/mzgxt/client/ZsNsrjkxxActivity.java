@@ -13,8 +13,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.util.HttpUtil;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;

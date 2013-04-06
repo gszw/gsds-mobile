@@ -12,6 +12,7 @@ import org.apache.http.protocol.HTTP;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.util.HttpHelper;
 import cn.com.gszw.mzgxt.util.HttpUtil;
 import cn.com.gszw.mzgxt.util.MD5EncryptUtils;

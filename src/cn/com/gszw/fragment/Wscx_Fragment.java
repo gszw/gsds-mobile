@@ -10,7 +10,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import cn.com.gszw.mzgxt.client.R;
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.util.HttpHelper;
 import cn.com.gszw.mzgxt.util.HttpUtil;
 import android.app.AlertDialog;

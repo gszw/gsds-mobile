@@ -26,6 +26,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.util.HttpUtil;
 
 public class TzggmxActivity extends Activity {

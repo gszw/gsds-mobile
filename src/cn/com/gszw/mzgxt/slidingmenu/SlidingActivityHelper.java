@@ -1,6 +1,6 @@
 package cn.com.gszw.mzgxt.slidingmenu;
 
-import cn.com.gszw.mzgxt.client.R;
+import cn.com.gszw.mzgxt.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;

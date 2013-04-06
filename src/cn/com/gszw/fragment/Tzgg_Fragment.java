@@ -1,6 +1,6 @@
 package cn.com.gszw.fragment;
 
-import cn.com.gszw.mzgxt.client.R;
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.client.TzggmxActivity;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;

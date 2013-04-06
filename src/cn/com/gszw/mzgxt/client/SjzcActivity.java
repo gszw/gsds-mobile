@@ -1,5 +1,6 @@
 package cn.com.gszw.mzgxt.client;
 
+import cn.com.gszw.mzgxt.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;

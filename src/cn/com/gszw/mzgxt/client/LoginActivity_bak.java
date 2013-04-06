@@ -29,7 +29,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.util.HttpUtil;
 
 public class LoginActivity_bak extends Activity {

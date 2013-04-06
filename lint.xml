@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
+    <issue id="ValidFragment">
+        <ignore path="src\cn\com\gszw\fragment\ContentFragment.java" />
+        <ignore path="src\cn\com\gszw\fragment\MenuFragment.java" />
+    </issue>
 </lint>

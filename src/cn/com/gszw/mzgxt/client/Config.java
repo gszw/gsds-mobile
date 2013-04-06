@@ -1,5 +1,6 @@
 package cn.com.gszw.mzgxt.client;
 
+import cn.com.gszw.mzgxt.R;
 import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.util.Log;

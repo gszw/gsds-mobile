@@ -5,7 +5,7 @@ package cn.com.gszw.fragment;
 
 
 import java.util.ArrayList;
-
+import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -17,9 +17,8 @@ import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
-
 import cn.com.gszw.mzgxt.client.DjNsryhscxActivity;
-import cn.com.gszw.mzgxt.client.R;
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.slidingmenu.SlidingMenu;
 import cn.com.gszw.mzgxt.util.HttpUtil;
 
@@ -39,9 +38,8 @@ public class MenuFragment extends PreferenceFragment implements OnPreferenceClic
     
     
     
-    public MenuFragment(Bundle bundle) {
+	public MenuFragment(Bundle bundle) {
 		this.bundle=bundle;
-		// TODO Auto-generated constructor stub
 	}
 
 

@@ -33,7 +33,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
-
 import android.os.Message;
 import android.os.StrictMode;
 import android.view.Gravity;
@@ -51,7 +50,7 @@ import android.widget.GridView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.util.HttpUtil;
 import cn.com.gszw.mzgxt.util.NetworkTool;
 

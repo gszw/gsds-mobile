@@ -9,8 +9,8 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.util.HttpUtil;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;

@@ -2,7 +2,7 @@ package cn.com.gszw.mzgxt.slidingmenu;
 
 import java.lang.reflect.Method;
 
-import cn.com.gszw.mzgxt.client.R;
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.slidingmenu.CustomViewAbove.OnPageChangeListener;
 
 import android.annotation.SuppressLint;

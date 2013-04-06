@@ -10,15 +10,14 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.client.PublicActivity;
-import cn.com.gszw.mzgxt.client.R;
 import cn.com.gszw.mzgxt.util.HttpUtil;
 import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -48,7 +47,7 @@ public class ContentFragment extends Fragment {
 	int xh;
 	WebView wv;
 	String result = "";
-	
+
     public ContentFragment(String text,Bundle bundle,int xh) {
         Log.e("gszw..ContentFragment..gouzao--start-", text);
         this.text = text;
@@ -61,7 +60,6 @@ public class ContentFragment extends Fragment {
          
     }
 	public ContentFragment(String str1, String str2, String str3,String str4) {
-		// TODO Auto-generated constructor stub
 		this.text=str1;
 		this.nsrbm=str2;
 		this.nsrnbm=str3;

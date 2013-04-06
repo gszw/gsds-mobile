@@ -10,6 +10,7 @@ import cn.com.gszw.fragment.Fhmx_Fragment.Fragment_Listener;
 import cn.com.gszw.fragment.Tjfx_Fragment;
 import cn.com.gszw.fragment.Tzgg_Fragment;
 import cn.com.gszw.fragment.Wscx_Fragment;
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.util.DummyTabContent;
 import android.os.Bundle;
 import android.app.AlertDialog;

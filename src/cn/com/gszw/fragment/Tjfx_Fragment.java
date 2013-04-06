@@ -15,7 +15,7 @@ import org.json.JSONObject;
 import cn.com.gszw.mzgxt.client.FhmxActivity;
 import cn.com.gszw.mzgxt.client.FpcxActivity;
 import cn.com.gszw.mzgxt.client.GhfbActivity;
-import cn.com.gszw.mzgxt.client.R;
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.client.RkLjrkqkActivity;
 import cn.com.gszw.mzgxt.client.SbLjsbqkActivity;
 import cn.com.gszw.mzgxt.client.SpcxActivity;

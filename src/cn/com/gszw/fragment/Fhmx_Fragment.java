@@ -14,9 +14,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import cn.com.gszw.mzgxt.client.DjNsryhscxActivity;
-import cn.com.gszw.mzgxt.client.FhmxActivity;
-import cn.com.gszw.mzgxt.client.MainActivity;
-import cn.com.gszw.mzgxt.client.R;
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.util.HttpUtil;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;

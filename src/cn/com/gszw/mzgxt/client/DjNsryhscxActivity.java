@@ -5,9 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import cn.com.gszw.fragment.ContentFragment;
 import cn.com.gszw.fragment.MenuFragment;
+import cn.com.gszw.mzgxt.R;
 import cn.com.gszw.mzgxt.slidingmenu.SlidingActivity;
 import cn.com.gszw.mzgxt.slidingmenu.SlidingMenu;
 import cn.com.gszw.mzgxt.util.HttpUtil;
